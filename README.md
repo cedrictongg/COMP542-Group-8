@@ -42,7 +42,7 @@ COMP542-Group-8/
 
 The `data/` directory contains player- and team-level season and career statistics scraped from Basketball-Reference, spanning career info (height, weight, position, career span), season-by-season totals, advanced stats (Win Shares, VORP, BPM, PER, usage %), All-Star selections, End-of-Season awards (All-NBA/All-Defense/All-Rookie teams), and MVP/other award voting shares.
 
-`NBA Prediction PreCompute.ipynb` merges these on `player_id` to build a single player-level dataset (`NBA_data`, 5,416 rows × 58 columns) with:
+`NBA Prediction.ipynb` merges these on `player_id` to build a single player-level dataset (`NBA_data`, 5,416 rows × 58 columns) with:
 
 - **Target**: `hof` — Hall of Fame status (boolean, cast to int).
 - **Career totals**: games, minutes, points, rebounds, assists, steals, blocks, turnovers, shooting splits (`career_g`, `career_pts`, `career_trb`, `career_fg_pct`, etc.), computed by summing per-season totals grouped by `player_id`.
